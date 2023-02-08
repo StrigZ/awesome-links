@@ -49,7 +49,7 @@ interface Edge {
 }
 
 export default function Home() {
-  const { error, loading, fetchMore } = useQuery(AllLinksQuery, {
+  const { data, error, loading, fetchMore } = useQuery(AllLinksQuery, {
     variables: {
       first: 2,
     },
